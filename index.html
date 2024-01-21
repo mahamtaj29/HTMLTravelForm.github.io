@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intergalactic Travel Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <!---Here implementing a simple form--->
+<h1>Intergalactic Travel Application Form</h1>
+<h2>1- Personal Information section</h2>
+<p> 
+  This form is for a futuristic travel agency that organizes trips across the galaxy. <br> Applicants provide comprehensive information for their adventurous journey through space.
+</p>
+<lable for = "Username"> Full Name </lable>
+<br>
+<input id = "Username" type = "text" placeholder = "FirstName SirName" minlength = "6" maxlength = "20" required> 
+<br>
+<!---Here implementing an email--->
+<lable for = "Email"> Email ID</lable>
+<br>
+<input id = "Email" type = "text" placeholder = "Name1234@gmail.com" minlength = "6" maxlength = "20" required> 
+<br>
+<lable for = "phone"> Emergency Contact </lable>
+<br>
+<input id = "phone" type = "tel" placeholder = "123-456-1234" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+<br>
+
+<!---Here implementing age input and Birthday date picker Calendar--->
+<lable for = "Age"> Enter your age [14 min - 65 max] </lable>
+<br>
+<input id = "Age" type = "number" placeholder = "00" min = "14" max="65" required> 
+<br>
+
+<lable for = "Birthday"> Birthday </lable>
+<br>
+<input id = "Birthday" type = "date" placeholder = "mm/dd/yyyy" min = "2002-10-02" max="2024-01-02" required> 
+<br>
+<br>
+
+<!---Here implementing a preferred spacesuit color options--->
+<lable for = "Color"> Select your preferred spacesuit color </lable>
+<input id="Color" type = "color" required class="colorstyle"> 
+<br>
+<div class="OptionStyle">
+  <h2>2- Travel Preference Section</h2>
+<!---Here implementing checkboxes for desired planets and galaxies to visit--->
+<p id = "Planets"> Select your desired planets and galaxies to visit </p>
+<input id="Mars" type = "checkbox" class="Planetstyle"> 
+<lable for = "Mars"> Mars </lable>
+<input id="Jupitor" type = "checkbox" class="Planetstyle"> 
+<lable for = "Jupitor"> Jupitor </lable>
+<input id="Saturn" type = "checkbox" class="Planetstyle">
+<lable for = "Saturn"> Saturn </lable>
+<input id="Neptune" type = "checkbox" class="Planetstyle">
+<lable for = "Neptune"> Neptune </lable>
+<input id="Pluto" type = "checkbox" class="Planetstyle">
+<lable for = "Pluto"> Pluto </lable>
+<input id="Mercury" type = "checkbox" class="Planetstyle">
+<lable for = "Mercury"> Mercury </lable>
+</div>
+<!---Here implementing a radio buttons for cabin class choice--->
+<div>
+<p id = "cabin"> Cabin Class Choices</p>
+<input type = "radio" id="Economy" value ="Economy"  name="cabin class" class="CabinInput">
+<lable class="Cabinlable" for = "Economy"> Economy </lable>
+<input type = "radio" id="Business" value ="Business"  name="cabin class" class="CabinInput">
+<lable class="Cabinlable" for = "Business"> Business </lable>
+<input type = "radio" id="Suite" value ="Suite"  name="cabin class" class="CabinInput">
+<lable class="Cabinlable" for = "Suite"> Galactic Suite </lable>
+</div>
+<br>
+<!---Here implementing range slider for gravity level--->
+<p id = "Level"> Select your desired gravity level in spacecraft: </p>
+<input id="Level" name = "Level" type = "range" min="0" max="60"> <br> (0% min - 60% max) <br>
+<!---Here implementing a dropdown for preferred meals--->
+<p id = "Meals"> Select your preferred meals: </p>
+  <select id="Meals" type = "select" class="selectbox" required ><br>
+  <option value="select preferred meals" class="selectbox"> Select your desired meal </option>
+  <option value="Earth Cuisine" class="selectbox"> Earth Cuisine </option>
+  <option value="Martian Delights" class="selectbox"> Martian Delights </option>
+  <option value="Asteroid Snacks" class="selectbox"> Asteroid Snacks </option>
+  <option value="Mar's Special Drink" class="selectbox"> Mar's Special Drink </option> 
+  <option value="Saturn Potato Rings"class="selectbox"> Saturn Potato Rings </option>
+  </select>
+  <h2>3- Intergalactic Passport Upload Section</h2>
+<!---Here implementing code for uploading passport--->
+<p id = "Pic"> Attach your passport or intergalactic ID </p>
+<input id="Pic" type = "File" accept="image/jpeg, image/png" required><br>
+<h2>4- Health and Safety Section</h2>
+<!---Here implementing code for checkbox grid and textarea--->
+<div class="Names">
+<p id = "Allergies"> Select below if you have any space allergies </p>
+<input id="Moon dust" type = "checkbox" class="Medical"> 
+<lable class="Medicallable" for = "Moon dust"> Moon Dust </lable>
+<input id="Solar Flares" type = "checkbox" class="Medical"> 
+<lable class="Medicallable" for = "Solar Flares"> Solar Flares </lable>
+<input id="Saturn Sensitive Eyes" type = "checkbox" class="Medical">
+<lable class="Medicallable" for = "Saturn Sensitive Eyes"> Saturn Sensitive Eyes </lable>
+<input id="Saturn dust" type = "checkbox" class="Medical"> 
+<lable class="Medicallable" for = "Saturn dust"> Saturn Dust </lable>
+<input id="Jupitor Nuts" type = "checkbox" class="Medical"> 
+<lable class="Medicallable" for = "Jupitor Nuts"> Jupitor Nuts </lable>
+<input id="Pluto pollens" type = "checkbox" class="Medical">
+<lable class="Medicallable" for = "Pluto pollens"> Pluto pollens </lable>
+</div>
+<p id="MedicalRequirements" > If you have any special Medical Requirements, please write here</p>
+<textarea id="MedicalRequirements" name="MedicalRequirements" rows="5" cols="80" class="Lines"> Please write here... </textarea>
+<br>
+
+<h2>5- Legal Agreements and Consents Section</h2>
+<!---Here implementing checkboxes for legal agreements-->
+<div >
+<lable for = "Risks" > Do you agree with the risk of injury during space travel </lable> 
+<input id="Risks" type = "checkbox" class="agreements" required ><br><br>
+<lable for = "Sickness"> Do you agree with space sickness waiver policy </lable>
+<input id="Sickness" type = "checkbox" class="agreements" required> <br>
+</div>
+<h2>6- Signature Field</h2>
+<div>
+  <input type="text" class="signature-input" placeholder="Sign here">
+</div>
+
+<p id="AdditionalRequests" > If you have any extra requests or fun space travel wishes, please write here</p>
+<textarea id="AdditionalRequests" name="AdditionalRequests" rows="5" cols="80" class="Lines"> Please write here... </textarea>
+</div><br>
+<br>
+<input type="submit" class="button" value="Submit">
+<input type="reset" class="button" value="Reset">
+<br>
+<br>
+<audio autoplay>
+  <source src = "https://cdn.freesound.org/previews/716/716961_5674468-lq.mp3" type="audio/mpeg"> Your browser does not support auido elements
+</audio>
+</form>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(Fonts/Roboto-Bold.ttf);
+}
+/* General Formatting of entire form*/
+body{
+    color: rgba(179, 181, 23, 0.973);
+    font-family: Roboto-Bold;
+    text-align: center;
+    font-size: 25px;
+    background-image: url("Images-TravelForm/outerspace-27.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 1px rgb(13, 17, 19);
+}
+/* Here implemented the formatting of Headings & paragraphs*/
+h1{
+    color: rgb(31, 168, 214);
+    font-family: Raboto-Bold;
+    text-shadow: 2px 2px 2px rgb(15, 24, 27);
+}
+h2{
+    color: rgb(172, 99, 180);
+    font-family: Raboto-Light;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(6, 10, 11);
+}
+p{
+    color: rgb(212, 131, 101);
+    font-family: Raboto-Bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgb(1, 2, 2);
+}
+/* Here implemented the hover styling on headings*/
+h2:hover{
+    color: rgb(31, 168, 214);
+    font-family: Roboto-Bold;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px rgb(15, 19, 20);
+    text-align: center;
+}
+/* Here implemented the styling for all inputs and meal selection options*/
+input, .selectbox{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    padding: 8px 8px;
+    background-color: rgb(200, 200, 200);
+}
+/* Here implemented the styling for all Submit button and color selection*/
+.button, .colorstyle {
+    width: 5%;
+    background-color: aliceblue;
+}
+/* Here implemented the hover styling on all inputs*/
+input:hover{
+    background-color: rgb(100, 117, 245);
+    border-color: rgb(43, 17, 17);
+    font-size: 20px;
+    color: white;
+    font-family: Roboto-Bold;
+}
+/* Here implemented the styling on checkboxes of Planets and Terms & conditions*/
+.Planetstyle,.agreements{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 5px;
+    height: 5px;
+    border: 2px solid #0a161e;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Here implemented the styling on radio boxes of cabin class*/
+.Cabinlable{
+    display: block;
+    margin-bottom: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
+}
+/* Here implemented the styling on inputs of radio boxes of cabin class*/
+.CabinInput{
+    display: flex;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    margin-left: 620px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Here implemented the hover styling on checkboxes when checked*/
+.Planetstyle:checked, .agreements:checked, .Medical:checked, .CabinInput:checked{
+    background-color: #0a2c9a;
+    border-color: #02111a;
+}
+/* Here implemented the styling on Textarea of special requests*/
+.Lines{
+    background-color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 15px;
+}
+/* Here implemented the styling on signature line*/
+.signature-input {
+    background-color: rgb(200, 200, 200);
+    width: 20%;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+/* Here implemented the styling on customised checkboxes of space allergies*/
+ .Medical{
+    width: 1px;
+    height: 1px;
+    border: 2px solid #0d2739;
+    border-radius: 4px;
+    display: flex;
+    position: absolute;
+    margin-left: 620px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+/* Here implemented the styling on lables of customized checkboxes*/
+.Medicallable{
+    display: block;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
