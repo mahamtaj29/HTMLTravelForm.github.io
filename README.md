@@ -25,7 +25,7 @@ The Intergalactic Travel Form project is a basic web form designed to capture us
 - **Signature Field:** Signature as input field and extra request to be added into the text area.
 - **Submit and reset Button:** Submit the form for processing or reset button to refresh the form.
 - Responsive Design: The form is designed to be responsive, ensuring a good user experience across various devices.
-  Note: Backend functionality not implemented in this practice project. Some of the fields might have the mandatory/required check as well.
+Note: Backend functionality not implemented in this practice project. Some of the fields might have the mandatory/required check as well.
 
 ## Technologies Used
 
