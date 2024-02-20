@@ -32,7 +32,7 @@ Note: Backend functionality not implemented in this practice project. Some of th
 
 - HTML5
 - CSS3
-- 
+  
 ## How to Use
 
 1. Clone the repository.
