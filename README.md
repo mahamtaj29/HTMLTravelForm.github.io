@@ -1,4 +1,4 @@
-# IntergalacticTravelForm-HTML-CSS
+# IntergalacticTravelForm
 
 This project is a simple web form created using HTML and CSS. It serves as a practice exercise to reinforce the basics of HTML and CSS and simulate an intergalactic travel booking form.
 
